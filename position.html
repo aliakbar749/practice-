@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            height: 100px;
+            width: 200px;
+            /* position: relative;  */
+            /* position: static; */
+            /* position: sticky;   */
+            /* position: absolute;  */
+            /* position: inherit; */
+            /* position: initial; */
+             position: fixed;   
+            top: 50px;
+            left: 200px;
+            background-color: aquamarine;
+        }
+        .second{
+            height: 100px;
+            width: 200px;
+            background-color: rgb(90, 88, 230);
+        }
+        .third{
+            height: 100px;
+            width: 200px;
+            background-color: rgb(218, 88, 230);
+        }
+       img{
+           height: 400px;
+           width: 800px;
+       }
+        .container  p::first-letter{ 
+           color: blue;
+        } 
+       .container p:nth-child(odd)
+       {
+           color: blueviolet;
+       }
+       .pseudoelement::before{
+           content: 'Hey';
+           color: rgb(255, 0, 212);
+
+       }
+       .pseudoelement::after{
+           content: 'Hey';
+           color: rgb(255, 0, 212);
+
+       } 
+
+
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <div class="first">
+
+        </div>
+        <div class="second">
+
+        </div>
+        <div class="third">
+
+        </div>
+        <h3>Svg format image</h3>
+        <img src="Usages-of-ICT .svg" alt="">
+
+
+    </section>
+    <div class="container">
+        <div class="box1">
+            <h3>pseudo class practice</h3>
+            <p>paragraph................</p>
+            <p>paragraph.................</p>
+            <p>paragraph..................</p>
+        </div>
+        <p>paragraph</p>
+        <p>paragraph</p>
+        <div class="box2">
+            <h5>This is another heading</h5>
+            <p>heading............</p>
+          
+            <p>paragraph................</p>
+            <p>paragraph.................</p>
+           
+
+        </div>
+        <label class="pseudoelement">
+            Name
+        </label>
+    </div>
+</body>
+</html>
